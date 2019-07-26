@@ -14,12 +14,20 @@ public class UserTest {
         User[] userArr = {user1, user2, user3};
 
         System.out.println("数组中最小的年龄是" + getMinAgeInUserArr(userArr));
+
+        int sumAge = getSumAge(userArr);
+
+    }
+
+    private static int getSumAge(User[] userArr) {
+        int sum = 0;
+        return sum;
     }
 
     private static int getMinAgeInUserArr(User[] userArr) {
         int minAge = userArr[0].getAge();
         for (int i = 1; i < userArr.length; i++) {
-            if (minAge>userArr[i].getAge()) {
+            if (minAge > userArr[i].getAge()) {
                 minAge = userArr[i].getAge();
             }
         }
